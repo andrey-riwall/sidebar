@@ -59,12 +59,22 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
   box-sizing: initial;
   border-left: 5px solid #4b5bf9;
   background: #4d5bf9;
-  transition: width .5s;
+  transition: width .5s ease, background .5s ease, border .5s ease;
   overflow-x: hidden;
 }
 
 .navigation.active {
   width: 300px;
+  background: #ff4d89;
+  border-left: 5px solid #ff4d89;
+}
+
+.navigation.active ul li b:nth-child(1)::before {
+  background: #ff4d89;
+}
+
+.navigation.active ul li b:nth-child(2)::before {
+  background: #ff4d89;
 }
 
 .navigation ul {
@@ -102,6 +112,7 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
   height: 100%;
   border-bottom-right-radius: 20px;
   background: #4d5bf9;
+  transition: background .5s ease;
 }
 
 .navigation ul li b:nth-child(2) {
@@ -122,6 +133,7 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
   height: 100%;
   border-top-right-radius: 20px;
   background: #4d5bf9;
+  transition: background .5s ease;
 }
 
 .navigation ul li.active b:nth-child(1),
