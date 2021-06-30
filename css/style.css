@@ -193,6 +193,7 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background .5s ease;
 }
 
 .toggle.active {
